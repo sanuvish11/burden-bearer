@@ -34,7 +34,7 @@ const Role = db.role;
 db.sequelize.sync();
 
 // simple route
-app.get("/", (req, res) => {
+app.get("/api/auth/", (req, res) => {
   res.json({ message: "Welcome to  application." });
 });
 
